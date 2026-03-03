@@ -4,7 +4,7 @@
 What properties are required for a volunteering activity?
     An activity MUST have an organisation, a label, and a description.
 
-If an activity has no Location, it is remote?
+If an activity has no Location, is it remote?
     An activity with no location might be remote but it is possible that location information is held in the activity's description.
 
 How to know with certainty if an activity is remote?

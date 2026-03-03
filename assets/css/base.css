@@ -3,8 +3,8 @@
   --color: #fff;
   --main-link-background-color: #bce7d3;
   --main-link-color: #0a121c;
-  --main-max-width: 50rem;
   --main-padding: 1.5rem 3.2rem 1.6rem 3.1rem;
+  --article-text-max-width: 50rem;
 }
 
 /* Defaults */
@@ -59,19 +59,19 @@ main {
   background-color: #fff;
   color: #152336;
   min-height: 100%;
+  padding: var(--main-padding);
 }
 
-main > article {
-  padding: var(--main-padding);
-  max-width: var(--main-max-width);
+main > article :is(p, ul, ol) {
+  max-width: var(--article-text-max-width);
 }
 
 
 /** Max content width */
-@media (min-width: 1080px) {
+@media (min-width: 1280px) {
     header, main > *, footer {
         margin: 0 auto;
-        max-width: calc(1080px - 6.2rem);
+        max-width: calc(1280px - 6.2rem);
     }
 }
 
