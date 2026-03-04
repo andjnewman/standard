@@ -19,6 +19,14 @@ The following diagram illustrates the main elements of the Volunteering and Soci
 
 ![Volunteering Data Model](../assets/img/volunteering-data-model.svg "Volunteering Data Model")
 
+
+## Taxonomies
+
+- [Charitable Cause Taxonomy](./cause)
+- [Requirement Taxonomy](./requirement)
+- [Skill Taxonomy](./skill)
+
+
 ## Contributing Knowledge to the Volunteering and Social Action Ontology
 
 We welcome domain experts and people with varied experiences of volunteering to contribute their knowledge of the sector. Shared knowledge is the basis to ensure our standard adequately provides structure to address the volunteering sector's needs.
