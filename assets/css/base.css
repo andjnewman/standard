@@ -76,7 +76,7 @@ main {
   padding: var(--main-padding);
 }
 
-main > article :is(p, ul, ol) {
+main > article :is(p, ul, ol, dl) {
   max-width: var(--article-text-max-width);
 }
 
