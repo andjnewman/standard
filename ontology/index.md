@@ -23,26 +23,88 @@ breadcrumbs:
 
 <h2 id="organisation">Organisation</h2>
 
-<h3 id="properties">Properties</h3>
+<h3 id="organisation-properties">Properties</h3>
 
 <dl>
-  <dt id="org-name">name</dt>
+  <dt id="organisation-name">name</dt>
   <dd>The organisation's name.</dd>
-  <dt id="org-description">description</dt>
+  <dt id="organisation-description">description</dt>
   <dd>A description of the organisation.</dd>
-  <dt id="org-website">website</dt>
+  <dt id="organisation-website">website</dt>
   <dd>The URL of the organisation's website.</dd>
-  <dt id="org-charity-number">charityNumber</dt>
+  <dt id="organisation-charity-number">charityNumber</dt>
   <dd>The UK charity registration number. See also:
     <a href="https://register-of-charities.charitycommission.gov.uk/">Charity Commission for England and Wales</a>;
     <a href="https://www.oscr.org.uk/about-charities/search-the-register/">Office of the Scottish Charity Regulator (OSCR)</a>;
     <a href="https://www.charitycommissionni.org.uk/charity-search">The Charity Commission for Northern Ireland</a>.
   </dd>
-  <dt id="org-activity">activity</dt>
+  <dt id="organisation-activity">activity</dt>
   <dd>An volunteering opportunity offered by the organisation.</dd>
-  <dt id="org-cause">cause</dt>
+  <dt id="organisation-cause">cause</dt>
   <dd>A charitable cause the organisation is involved with. See the <a href="./cause">Charitable Cause Taxonomy</a></dd>
 </dl>
+
+
+<h2 id="time">Time</h2>
+
+<h3 id="time-properties">Properties</h3>
+
+<dl>
+  <dt id="time-label">label</dt>
+  <dd>The temporal entity's name. See <a href="https://www.w3.org/TR/owl-time/#time:TemporalEntity">OWL Time Temporal Entity</a>.</dd>
+  <dt id="time-beginning">beginning</dt>
+  <dd>The beginning of a period of time. See <a href="https://www.w3.org/TR/owl-time/#time:hasBeginning">OWL Time has beginning</a>.</dd>
+  <dt id="time-end">end</dt>
+  <dd>The end of a period of time. See <a href="https://www.w3.org/TR/owl-time/#time:hasEnd">OWL Time has end</a>.</dd>
+</dl>
+
+<h3 id="time-defined-temporal-entities">Defined temporal entities</h3>
+
+<dl>
+  <dt id="time-monday-morning">MondayMorning</dt>
+  <dd>The time period between 6am and 12pm on Monday.</dd>
+  <dt id="time-monday-afternoon">MondayAfternoon</dt>
+  <dd>The time period between 12pm and 6pm on Monday.</dd>
+  <dt id="time-monday-evening">MondayEvening</dt>
+  <dd>The time period between 6pm and 12am on Monday.</dd>
+  <dt id="time-tuesday-morning">TuesdayMorning</dt>
+  <dd>The time period between 6am and 12pm on Tuesday.</dd>
+  <dt id="time-tuesday-afternoon">TuesdayAfternoon</dt>
+  <dd>The time period between 12pm and 6pm on Tuesday.</dd>
+  <dt id="time-tuesday-evening">TuesdayEvening</dt>
+  <dd>The time period between 6pm and 12am on Tuesday.</dd>
+  <dt id="time-wednesday-morning">WednesdayMorning</dt>
+  <dd>The time period between 6am and 12pm on Wednesday.</dd>
+  <dt id="time-wednesday-afternoon">WednesdayAfternoon</dt>
+  <dd>The time period between 12pm and 6pm on Wednesday.</dd>
+  <dt id="time-wednesday-evening">WednesdayEvening</dt>
+  <dd>The time period between 6pm and 12am on Wednesday.</dd>
+  <dt id="time-thursday-morning">ThursdayMorning</dt>
+  <dd>The time period between 6am and 12pm on Thursday.</dd>
+  <dt id="time-thursday-afternoon">ThursdayAfternoon</dt>
+  <dd>The time period between 12pm and 6pm on Thursday.</dd>
+  <dt id="time-thursday-evening">ThursdayEvening</dt>
+  <dd>The time period between 6pm and 12am on Thursday.</dd>
+  <dt id="time-friday-morning">FridayMorning</dt>
+  <dd>The time period between 6am and 12pm on Friday.</dd>
+  <dt id="time-friday-afternoon">FridayAfternoon</dt>
+  <dd>The time period between 12pm and 6pm on Friday.</dd>
+  <dt id="time-friday-evening">FridayEvening</dt>
+  <dd>The time period between 6pm and 12am on Friday.</dd>
+  <dt id="time-saturday-morning">SaturdayMorning</dt>
+  <dd>The time period between 6am and 12pm on Saturday.</dd>
+  <dt id="time-saturday-afternoon">SaturdayAfternoon</dt>
+  <dd>The time period between 12pm and 6pm on Saturday.</dd>
+  <dt id="time-saturday-evening">SaturdayEvening</dt>
+  <dd>The time period between 6pm and 12am on Saturday.</dd>
+  <dt id="time-sunday-morning">SundayMorning</dt>
+  <dd>The time period between 6am and 12pm on Sunday.</dd>
+  <dt id="time-sunday-afternoon">SundayAfternoon</dt>
+  <dd>The time period between 12pm and 6pm on Sunday.</dd>
+  <dt id="time-sunday-evening">SundayEvening</dt>
+  <dd>The time period between 6pm and 12am on Sunday.</dd>
+</dl>
+
 
 <h2 id="taxonomies">Taxonomies</h2>
 
