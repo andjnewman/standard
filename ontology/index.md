@@ -20,6 +20,25 @@ The following diagram illustrates the main elements of the Volunteering and Soci
 ![Volunteering Data Model](../assets/img/volunteering-data-model.svg "Volunteering Data Model")
 
 
+## Organisation
+
+### Properties
+
+<dl>
+  <dt>name</dt>
+  <dd>The organisation's name.</dd>
+  <dt>description</dt>
+  <dd>A description of the organisation.</dd>
+  <dt>website</dt>
+  <dd>The URL of the organisation's website.</dd>
+  <dt>charityNumber</dt>
+  <dd>The UK charity registration number. See also: https://register-of-charities.charitycommission.gov.uk/ (England and Wales); https://www.oscr.org.uk/about-charities/search-the-register/ (Scotland); https://www.charitycommissionni.org.uk/charity-search (Northern Ireland).<dd>
+  <dt>activity</dt>
+  <dd>An volunteering opportunity offered by the organisation.</dd>
+  <dt>cause</dt>
+  <dd>A charitable cause the organisation is involved with. See the <a href="./cause">Charitable Cause Taxonomy</a></dd>
+</dl>
+
 ## Taxonomies
 
 - [Charitable Cause Taxonomy](./cause)
