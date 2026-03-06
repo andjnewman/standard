@@ -39,6 +39,10 @@ img {
   max-width: 90%;
 }
 
+dt {
+  font-weight: bold;
+}
+
 /* Layout */
 header, footer {
   align-items: center;
