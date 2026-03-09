@@ -3,7 +3,7 @@
 ## Namespaces
 ### Ontology Base URI
 prefix id:              <https://id.volunteeringdata.io/>
-prefix :                <https://id.volunteeringdata.io/schema/>
+prefix :                <https://ns.volunteeringdata.io/>
 
 ### Core W3C ontologies (OWL 2 reserved vocabulary)
 prefix rdf:             <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -25,7 +25,7 @@ id:schema
     rdfs:isDefinedBy id:schema ;
     dc:issued "2025-11-20"^^xsd:date ;
     vann:preferredNamespacePrefix "volunteering" ;
-    vann:preferredNamespaceUri "https://id.volunteeringdata.io/schema/"^^xsd:anyURI ;
+    vann:preferredNamespaceUri "https://ns.volunteeringdata.io/"^^xsd:anyURI ;
     rdfs:label "Volunteering and Social Action Ontology"@en ;
     dc:description "Defines a vocabulary to describe volunteering activities, volunteer-involving organisations and volunteering management systems."@en ;
 .
@@ -35,7 +35,7 @@ id:schema
 :Activity
     a owl:Class ;
     rdfs:isDefinedBy id:schema ;
-    rdfs:label "Volunteering Activity" ;
+    rdfs:label "Volunteering Activity"@en ;
     rdfs:label "Activity"@en ;
     rdfs:comment "Any kind of activity that involves volunteers."@en ;
 .
@@ -43,7 +43,7 @@ id:schema
 :Location
     a owl:Class ;
     rdfs:isDefinedBy id:schema ;
-    rdfs:label "Volunteering Location" ;
+    rdfs:label "Volunteering Location"@en ;
     rdfs:label "Location"@en ;
     rdfs:comment "Any location related to volunteering activities."@en ;
 .
@@ -51,7 +51,7 @@ id:schema
 :Organisation
     a owl:Class ;
     rdfs:isDefinedBy id:schema ;
-    rdfs:label "Volunteer-Involving Organisation" ;
+    rdfs:label "Volunteer-Involving Organisation"@en ;
     rdfs:label "Organisation"@en ;
     rdfs:comment "Any organisation running activities that involve volunteers."@en ;
 .
@@ -59,17 +59,9 @@ id:schema
 :Session
     a owl:Class ;
     rdfs:isDefinedBy id:schema ;
-    rdfs:label "Volunteering Activity Session" ;
+    rdfs:label "Volunteering Activity Session"@en ;
     rdfs:label "Session"@en ;
     rdfs:comment "A session describes a time and place for an activity that involves volunteers."@en ;
-.
-
-:Time
-    a owl:Class ;
-    rdfs:isDefinedBy id:schema ;
-    rdfs:label "Volunteering Activity Time Information" ;
-    rdfs:label "Time"@en ;
-    rdfs:comment "Any time information related to volunteering activities."@en ;
 .
 
 
@@ -118,13 +110,6 @@ id:schema
     rdfs:isDefinedBy id:schema ;
     rdfs:range :Session ;
     rdfs:label "has session"@en ;
-.
-
-:time
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy id:schema ;
-    rdfs:range :Time ;
-    rdfs:label "has time"@en ;
 .
 
 
