@@ -23,14 +23,6 @@ prefix time:            <http://www.w3.org/2006/time#>
     rdfs:label "Time"@en ;
 .
 
-:WeekDayTimePeriod
-    a owl:Class ;
-    rdfs:subClassOf :Time ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:comment "A predefined time period within a specific day of the week (morning, afternoon or evening)."@en ;
-    rdfs:label "Week Day Time Period"@en ;
-.
-
 ### Object Properties
 :location
     a owl:ObjectProperty ;

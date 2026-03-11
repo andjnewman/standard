@@ -39,6 +39,18 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "has address"@en ;
 .
 
+:allowsRemoteParticipation
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:label "allows remote participation"@en ;
+.
+
+:applyLink
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:label "has apply link"@en ;
+.
+
 :charityNumber
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
@@ -68,6 +80,12 @@ prefix vann:            <http://purl.org/vocab/vann/>
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
     rdfs:label "has name"@en ;
+.
+
+:requiresEmergencyParticipation
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:label "requires emergency participation"@en ;
 .
 
 :title
