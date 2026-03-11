@@ -1,0 +1,75 @@
+# Volunteering vocabulary
+
+## Namespaces
+### Ontology Base URI
+prefix :                <https://ns.volunteeringdata.io/>
+
+### Core W3C ontologies (OWL 2 reserved vocabulary)
+prefix rdfs:            <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl:             <http://www.w3.org/2002/07/owl#>
+prefix xsd:             <http://www.w3.org/2001/XMLSchema#>
+
+### Other namespaces used
+prefix time:            <http://www.w3.org/2006/time#>
+
+
+## Location Class
+:Location
+    a owl:Class ;
+    rdfs:subClassOf time:TemporalEntity ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    dc:description "Volunteering Activity Location"@en ;
+    rdfs:comment "Any location related to volunteering activities."@en ;
+    rdfs:label "Time"@en ;
+.
+
+:WeekDayTimePeriod
+    a owl:Class ;
+    rdfs:subClassOf :Time ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:comment "A predefined time period within a specific day of the week (morning, afternoon or evening)."@en ;
+    rdfs:label "Week Day Time Period"@en ;
+.
+
+### Object Properties
+:location
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:domain :Session ;
+    rdfs:range :Location ;
+    rdfs:label "has location"@en ;
+.
+
+
+### Datatype Properties
+:locationName
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :name ;
+    rdfs:domain :Location ;
+    rdfs:label "location has name"@en ;
+.
+
+:locationAddress
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :address ;
+    rdfs:domain :Location ;
+    rdfs:label "location has address"@en ;
+.
+
+:locationLatitude
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :latitude ;
+    rdfs:domain :Location ;
+    rdfs:label "location has latitude"@en ;
+.
+
+:locationLongitude
+    a owl:DatatypeProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :longitude ;
+    rdfs:domain :Location ;
+    rdfs:label "location has longitude"@en ;
+.
