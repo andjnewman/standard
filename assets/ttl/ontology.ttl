@@ -31,129 +31,17 @@ prefix vann:            <http://purl.org/vocab/vann/>
 .
 
 
-## Classes
-:Location
-    a owl:Class ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:label "Volunteering Location"@en ;
-    rdfs:label "Location"@en ;
-    rdfs:comment "Any location related to volunteering activities."@en ;
-.
-
-:Session
-    a owl:Class ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:label "Volunteering Activity Session"@en ;
-    rdfs:label "Session"@en ;
-    rdfs:comment "A session describes a time and place for an activity that involves volunteers."@en ;
-.
-
-
-## Subclasses
-:SessionLocation
-    a owl:Class ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subClassOf :Location ;
-    rdfs:label "Session Location"@en ;
-    rdfs:comment "Any location information related to a volunteering activity session."@en ;
-.
-
-
-## Object Properties
-
-:location
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:range :Location ;
-    rdfs:label "has location"@en ;
-.
-
-:session
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:range :Session ;
-    rdfs:label "has session"@en ;
-.
-
-
-## Classification Object Properties
-
-:locationOrganisation
-    a owl:ObjectProperty ;
-    rdfs:subPropertyOf :organisation ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    owl:inverseOf :organisationLocation ;
-    rdfs:domain :OrganisationLocation ;
-    rdfs:range :Organisation ;
-    rdfs:label "location has organisation"@en ;
-.
-
-:locationSession
-    a owl:ObjectProperty ;
-    rdfs:subPropertyOf :session ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    owl:inverseOf :sessionLocation ;
-    rdfs:domain :SessionLocation ;
-    rdfs:range :Session ;
-    rdfs:label "location has session"@en ;
-.
-
-:sessionActivity
-    a owl:ObjectProperty ;
-    rdfs:subPropertyOf :activity ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    owl:inverseOf :activitySession ;
-    rdfs:domain :Session ;
-    rdfs:range :Activity ;
-    rdfs:label "session has activity"@en ;
-.
-
-:sessionLocation
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :location ;
-    owl:inverseOf :locationSession ;
-    rdfs:domain :Session ;
-    rdfs:range :SessionLocation ;
-    rdfs:label "session has location"@en ;
-.
-
-:sessionTime
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :time ;
-    owl:inverseOf :timeSession ;
-    rdfs:domain :Session ;
-    rdfs:range :SessionTime ;
-    rdfs:label "session has time"@en ;
-.
-
-:timeSession
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :session ;
-    owl:inverseOf :timeSession ;
-    rdfs:domain :SessionTime ;
-    rdfs:range :Session ;
-    rdfs:label "time has session"@en ;
-.
-
-
 ## Datatype Properties
 :address
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:domain :Location ;
     rdfs:label "has address"@en ;
 .
 
-:dayOfWeek
+:charityNumber
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf time:dayOfWeek ;
-    rdfs:domain :Time ;
-    rdfs:range :DayOfWeek ;
-    rdfs:label "has day of week"@en ;
+    rdfs:label "has charity number"@en ;
 .
 
 :description
@@ -163,131 +51,33 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "has description"@en ;
 .
 
-:activityDescription
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :description ;
-    rdfs:domain :Activity ;
-    rdfs:label "has description"@en ;
-.
-
-:organisationDescription
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :description ;
-    rdfs:domain :Organisation ;
-    rdfs:label "has description"@en ;
-.
-
-:email
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf vcard:hasEmail ;
-    rdfs:label "has email"@en ;
-.
-
-:label
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf rdfs:label ;
-    rdfs:label "has label"@en ;
-.
-
-:activityLabel
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :label ;
-    rdfs:domain :Activity ;
-    rdfs:label "has label"@en ;
-.
-
-:locationLabel
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :label ;
-    rdfs:domain :Location ;
-    rdfs:label "has label"@en ;
-.
-
 :latitude
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf rdfs:seeAlso ;
-    rdfs:domain :Location ;
     rdfs:label "has latitude"@en ;
 .
 
 :longitude
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:domain :Location ;
     rdfs:label "has longitude"@en ;
 .
 
-:phone
+:name
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:label "has phone number"@en ;
+    rdfs:label "has name"@en ;
 .
 
-:purpose
+:title
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:domain :Organisation ;
-    rdfs:label "has purpose"@en ;
-.
-
-:timeOfDay
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf time:inside ;
-    rdfs:range :TimeOfDay ;
-    rdfs:label "has time of day"@en ;
-.
-
-:url
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf rdfs:seeAlso ;
-    rdfs:label "has URL"@en ;
-.
-
-:applyLink
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :url ;
-    rdfs:label "has apply link"@en ;
-.
-
-:activityApplyLink
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:domain :Activity ;
-    rdfs:subPropertyOf :applyLink ;
-    rdfs:label "has apply link"@en ;
-.
-
-:organisationApplyLink
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:domain :Organisation ;
-    rdfs:subPropertyOf :applyLink ;
-    rdfs:label "has apply link"@en ;
-.
-
-:sessionApplyLink
-    a owl:DatatypeProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:domain :Session ;
-    rdfs:subPropertyOf :applyLink ;
-    rdfs:label "has apply link"@en ;
+    rdfs:label "has title"@en ;
 .
 
 :website
     a owl:DatatypeProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:domain :Organisation ;
-    rdfs:subPropertyOf :url ;
     rdfs:label "has website"@en ;
 .
 
