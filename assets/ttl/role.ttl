@@ -55,16 +55,6 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:label "role has activity"@en ;
 .
 
-:roleSkill
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
-    rdfs:subPropertyOf :skill ;
-    owl:inverseOf :skillRole ;
-    rdfs:domain :Role ;
-    rdfs:range :Skill ;
-    rdfs:label "role has skill"@en ;
-.
-
 :roleRequirement
     a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
@@ -73,6 +63,26 @@ prefix vann:            <http://purl.org/vocab/vann/>
     rdfs:domain :Role ;
     rdfs:range :Requirement ;
     rdfs:label "role has requirement"@en ;
+.
+
+:roleReward
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :reward ;
+    owl:inverseOf :rewardRole ;
+    rdfs:domain :Role ;
+    rdfs:range :Reward ;
+    rdfs:label "role has reward"@en ;
+.
+
+:roleSkill
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy <https://ns.volunteeringdata.io/> ;
+    rdfs:subPropertyOf :skill ;
+    owl:inverseOf :skillRole ;
+    rdfs:domain :Role ;
+    rdfs:range :Skill ;
+    rdfs:label "role has skill"@en ;
 .
 
 
