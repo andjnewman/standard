@@ -55,7 +55,7 @@
 
 .toc .secno {
   display: inline-block;
-  min-width: 2.5em;
+  min-width: 3.5em;
   color: var(--main-link-color);
 }
 
@@ -65,9 +65,9 @@
 }
 
 .toc ol ol .secno {
-  min-width: 3.25em;
+  min-width: 4.25em;
 }
 
 .toc ol ol ol .secno {
-  min-width: 4em;
+  min-width: 5em;
 }

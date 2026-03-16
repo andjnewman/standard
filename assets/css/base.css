@@ -28,6 +28,11 @@ h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+h2 > .secno, h3 > .secno, h4 > .secno, h5 > .secno, h6 > .secno {
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
 a {
   color: #3056a9;
 }
@@ -154,4 +159,51 @@ main > article :is(p, ul, ol, dl) {
     position: absolute;
     margin-right: 100%;
     right: 10px;
+}
+
+/* Example - W3C spec style */
+.example {
+  background: #fcfaee;
+  border: 1px solid #e0cb52;
+  border-left: 0.5em solid #e0cb52;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  position: relative;
+  clear: both;
+}
+
+.example::before {
+  background: #e0cb52;
+  color: #000;
+  padding: 0.1em 0.5em;
+  position: absolute;
+  top: -1px;
+  left: -0.5em;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.example .example-title {
+  display: block;
+  color: #574b0f;
+  font-weight: bold;
+  margin: 0.5em 0 0.5em 0;
+}
+
+.example .example-title .marker {
+  text-transform: none;
+}
+
+.example pre {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+  overflow-x: auto;
+  font-size: 0.9em;
+}
+
+.example pre code {
+  background: transparent;
 }

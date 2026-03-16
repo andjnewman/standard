@@ -15,6 +15,7 @@ breadcrumbs:
       <li><a href="#organisation"><span class="secno">2.1 </span><span class="content">Organisation</span></a>
         <ol>
           <li><a href="#organisation-properties"><span class="secno">2.1.1 </span><span class="content">Properties</span></a></li>
+          <li><a href="#organisation-example"><span class="secno">2.1.2 </span><span class="content">Example</span></a></li>
         </ol>
       </li>
       <li><a href="#activity"><span class="secno">2.2 </span><span class="content">Activity</span></a>
@@ -56,7 +57,7 @@ breadcrumbs:
 </nav>
 
 
-<h2 id="introduction">Introduction</h2>
+<h2 id="introduction"><span class="secno">1. </span>Introduction</h2>
 
 
 <p>The volunteering and social action ontology can be <a href="../webvowl/#opts=doc=0;filter_sco=true;mode_compact=true">visualized through WebVOWL</a>, a web-based ontology visualization tool.</p>
@@ -64,16 +65,16 @@ breadcrumbs:
 <p>The volunteering and social action ontology is implemented using RDF, a native data format for the semantic web. RDF enables the <a href="https://5stardata.info/en/">5-star</a> deployment scheme for Open Data; a scheme suggested by Tim Berners-Lee, the inventor of the Web and <a href="https://www.w3.org/DesignIssues/LinkedData.html">Linked Data</a> initiator.</p>
 
 
-<h2 id="volunteering-data-model">Volunteering Data Model</h2>
+<h2 id="volunteering-data-model"><span class="secno">2. </span>Volunteering Data Model</h2>
 
 <p>The following diagram illustrates the main elements of the Volunteering and Social Action Ontology.</p>
 
 <p class="data-model-diagram"><img src="../assets/img/volunteering-data-model.svg" alt="Volunteering Data Model" title="Volunteering Data Model" /></p>
 
 
-<h3 id="organisation">Organisation</h3>
+<h3 id="organisation"><span class="secno">2.1 </span>Organisation</h3>
 
-<h4 id="organisation-properties">Properties</h4>
+<h4 id="organisation-properties"><span class="secno">2.1.1 </span>Properties</h4>
 
 <dl>
   <dt id="organisation-name">name</dt>
@@ -96,10 +97,28 @@ breadcrumbs:
   <dd>A charitable cause the organisation is involved with. See the <a href="./cause">Charitable Cause Taxonomy</a>.</dd>
 </dl>
 
+<h4 id="organisation-example"><span class="secno">2.1.2 </span>Example</h4>
 
-<h3 id="activity">Activity</h3>
+<div class="example">
+  <pre class="hljs json">{
+  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://ns.volunteeringdata.io/"</span>,
+  <span class="hljs-attr">"@type"</span>: <span class="hljs-string">"Organisation"</span>,
+  <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"https://example.org/organisation/oxfam-gb"</span>,
+  <span class="hljs-attr">"organisationName"</span>: <span class="hljs-string">"Oxfam GB"</span>,
+  <span class="hljs-attr">"organisationDescription"</span>: <span class="hljs-string">"Oxfam is a global movement of people working together to end the injustice of poverty."</span>,
+  <span class="hljs-attr">"organisationWebsite"</span>: <span class="hljs-string">"https://www.oxfam.org.uk/"</span>,
+  <span class="hljs-attr">"organisationCharityNumber"</span>: <span class="hljs-string">"202918"</span>,
+  <span class="hljs-attr">"organisationImage"</span>: <span class="hljs-string">"https://example.org/images/oxfam-logo.png"</span>,
+  <span class="hljs-attr">"organisationCause"</span>: [
+    <span class="hljs-string">"https://ns.volunteeringdata.io/AntiPoverty"</span>,
+    <span class="hljs-string">"https://ns.volunteeringdata.io/CivilRights"</span>
+  ]
+}</pre>
+</div>
 
-<h4 id="activity-properties">Properties</h4>
+<h3 id="activity"><span class="secno">2.2 </span>Activity</h3>
+
+<h4 id="activity-properties"><span class="secno">2.2.1 </span>Properties</h4>
 
 <dl>
   <dt id="activity-title">title</dt>
@@ -119,9 +138,9 @@ breadcrumbs:
 </dl>
 
 
-<h3 id="role">Role</h3>
+<h3 id="role"><span class="secno">2.3 </span>Role</h3>
 
-<h4 id="role-properties">Properties</h4>
+<h4 id="role-properties"><span class="secno">2.3.1 </span>Properties</h4>
 
 <dl>
   <dt id="role-title">title</dt>
@@ -151,9 +170,9 @@ breadcrumbs:
 </dl>
 
 
-<h3 id="session">Session</h3>
+<h3 id="session"><span class="secno">2.4 </span>Session</h3>
 
-<h4 id="session-properties">Properties</h4>
+<h4 id="session-properties"><span class="secno">2.4.1 </span>Properties</h4>
 
 <dl>
   <dt id="session-activity">activity</dt>
@@ -165,9 +184,9 @@ breadcrumbs:
 </dl>
 
 
-<h3 id="location">Location</h3>
+<h3 id="location"><span class="secno">2.5 </span>Location</h3>
 
-<h4 id="location-properties">Properties</h4>
+<h4 id="location-properties"><span class="secno">2.5.1 </span>Properties</h4>
 
 <dl>
   <dt id="location-name">name</dt>
@@ -185,9 +204,9 @@ breadcrumbs:
 </dl>
 
 
-<h3 id="time">Time</h3>
+<h3 id="time"><span class="secno">2.6 </span>Time</h3>
 
-<h4 id="time-properties">Properties</h4>
+<h4 id="time-properties"><span class="secno">2.6.1 </span>Properties</h4>
 
 <dl>
   <dt id="time-label">rdfs:label</dt>
@@ -198,7 +217,7 @@ breadcrumbs:
   <dd>The end of a period of time. See <a href="https://www.w3.org/TR/owl-time/#time:hasEnd">OWL Time has end</a>.</dd>
 </dl>
 
-<h4 id="time-defined-temporal-entities">Defined temporal entities</h4>
+<h4 id="time-defined-temporal-entities"><span class="secno">2.6.2 </span>Defined temporal entities</h4>
 
 <dl>
   <dt id="time-monday-morning">MondayMorning</dt>
@@ -246,7 +265,7 @@ breadcrumbs:
 </dl>
 
 
-<h2 id="taxonomies">Taxonomies</h2>
+<h2 id="taxonomies"><span class="secno">3. </span>Taxonomies</h2>
 
 <ul>
   <li><a href="./cause">Charitable Cause Taxonomy</a></li>
@@ -255,11 +274,11 @@ breadcrumbs:
 </ul>
 
 
-<h2 id="contributing-knowledge">Contributing Knowledge to the Volunteering and Social Action Ontology</h2>
+<h2 id="contributing-knowledge"><span class="secno">4. </span>Contributing Knowledge to the Volunteering and Social Action Ontology</h2>
 
 <p>We welcome domain experts and people with varied experiences of volunteering to contribute their knowledge of the sector. Shared knowledge is the basis to ensure our standard adequately provides structure to address the volunteering sector's needs.</p>
 
-<h3 id="discussion-topics">Discussion Topics</h3>
+<h3 id="discussion-topics"><span class="secno">4.1 </span>Discussion Topics</h3>
 
 <p>Please don't hesitate to contribute to the <a href="https://github.com/orgs/volunteeringdata/discussions/">discussions</a> on the volunteering data model repository.</p>
 
@@ -277,6 +296,6 @@ breadcrumbs:
 </ul>
 
 
-<h2 id="standardisation-history">Standardisation History</h2>
+<h2 id="standardisation-history"><span class="secno">5. </span>Standardisation History</h2>
 
 <p>The data model's evolution is recorded as a <a href="../working-group/model-version/">series of versions</a>.</p>
