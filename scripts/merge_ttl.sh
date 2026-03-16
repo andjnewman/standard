@@ -62,7 +62,7 @@ merge_ttl_files() {
 mkdir -p "$OUTPUT_DIR"
 
 # Merge ontology files
-merge_ttl_files "ontology_*.ttl" "$OUTPUT_DIR/ontology_merged.ttl"
+merge_ttl_files "ontology*.ttl" "$OUTPUT_DIR/ontology_merged.ttl"
 
 # Merge taxonomy files  
 merge_ttl_files "taxonomy_*.ttl" "$OUTPUT_DIR/taxonomy_merged.ttl"

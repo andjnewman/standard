@@ -50,11 +50,11 @@ breadcrumbs:
 <h3 id="time-properties">Properties</h3>
 
 <dl>
-  <dt id="time-label">label</dt>
+  <dt id="time-label">rdfs:label</dt>
   <dd>The temporal entity's name. See <a href="https://www.w3.org/TR/owl-time/#time:TemporalEntity">OWL Time Temporal Entity</a>.</dd>
-  <dt id="time-beginning">beginning</dt>
+  <dt id="time-beginning">time:hasBeginning</dt>
   <dd>The beginning of a period of time. See <a href="https://www.w3.org/TR/owl-time/#time:hasBeginning">OWL Time has beginning</a>.</dd>
-  <dt id="time-end">end</dt>
+  <dt id="time-end">time:hasEnd</dt>
   <dd>The end of a period of time. See <a href="https://www.w3.org/TR/owl-time/#time:hasEnd">OWL Time has end</a>.</dd>
 </dl>
 
