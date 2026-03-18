@@ -37,9 +37,7 @@ If you have any questions please contact us via research@theodi.org
 
 ## Next Meetings
 
-### Meeting 6: 18/03/26 3-4pm
-
-This will be a retrospective, we will present the work of the working group and our achievements and seek your views on what went well, what didn’t go well and your ideas for the future.
+Currently there are no planned meetings.
 
 
 ## Previous Meetings
