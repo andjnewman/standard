@@ -21,6 +21,7 @@ breadcrumbs:
       <li><a href="#activity"><span class="secno">2.2 </span><span class="content">Activity</span></a>
         <ol>
           <li><a href="#activity-properties"><span class="secno">2.2.1 </span><span class="content">Properties</span></a></li>
+          <li><a href="#activity-example"><span class="secno">2.2.2 </span><span class="content">Example</span></a></li>
         </ol>
       </li>
       <li><a href="#role"><span class="secno">2.3 </span><span class="content">Role</span></a>
@@ -152,6 +153,35 @@ breadcrumbs:
   <dt id="activity-session">session</dt>
   <dd>A session when the activity takes place.</dd>
 </dl>
+
+<h4 id="activity-example"><span class="secno">2.2.2 </span>Example</h4>
+
+<div class="example">
+  <h5 id="example-2">Example 2</h5>
+  <pre class="hljs json">{
+  <span class="hljs-attr">"@context"</span>: <span class="hljs-string">"https://api.volunteeringdata.io/context/v1"</span>,
+  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/686e542f7734eb69b0ec1516"</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Activity"</span>,
+  <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Volunteer Skywalker"</span>,
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Help distribute food, drink, and much-needed essential supplies to those who don't have a safe place to call home."</span>,
+  <span class="hljs-attr">"organisation"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/684059665d271835a2253c9d"</span>,
+  <span class="hljs-attr">"role"</span>: {
+    <span class="hljs-attr">"applyLink"</span>: <span class="hljs-string">"https://underoneskytogether.com/get-involved/join-us"</span>,
+    <span class="hljs-attr">"minimumAge"</span>: <span class="hljs-string">"16"</span>
+  },
+  <span class="hljs-attr">"session"</span>: {
+    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://id.volunteeringdata.io/s686e542f7734eb69b0ec1516"</span>,
+    <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Session"</span>,
+    <span class="hljs-attr">"location"</span>: [
+      {
+        <span class="hljs-attr">"address"</span>: <span class="hljs-string">"127-128 Lower Marsh, London SE1 7AE, UK"</span>,
+        <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"51.5005014"</span>,
+        <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"-0.1136474"</span>
+      }
+    ]
+  }
+}</pre>
+</div>
 
 
 <h3 id="role"><span class="secno">2.3 </span>Role</h3>
